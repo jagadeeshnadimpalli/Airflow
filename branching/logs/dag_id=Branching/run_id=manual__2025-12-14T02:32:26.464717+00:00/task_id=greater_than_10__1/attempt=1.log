@@ -1,0 +1,7 @@
+{"timestamp":"2025-12-14T02:32:28.265506","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-12-14T02:32:28.267091","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Branching.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-12-14T02:32:28.425985","level":"info","event":"Done. Returned value was: evn_or_odd_grp.even","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
+{"timestamp":"2025-12-14T02:32:28.426264","level":"info","event":"Branch into evn_or_odd_grp.even","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
+{"timestamp":"2025-12-14T02:32:28.492393","level":"info","event":"Following branch {'evn_or_odd_grp.even'}","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
+{"timestamp":"2025-12-14T02:32:28.492681","level":"info","event":"Skipping tasks [('evn_or_odd_grp.odd', -1)]","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
+{"timestamp":"2025-12-14T02:32:28.496986","level":"info","event":"Skipping downstream tasks.","logger":"task"}
