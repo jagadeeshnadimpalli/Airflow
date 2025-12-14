@@ -48,3 +48,25 @@ user_data = context['ti'].xcom_pull(
     key="return_value",
     include_prior_dates=True # Crucial for fetching the latest event value
 )
+
+## 🚀 How to Run This Project
+
+### 1\. Start the Environment
+
+Navigate to the `Assets` folder and start the containers:
+
+```bash
+cd Assets
+docker compose up -d
+```
+
+### 2\. Monitor the Pipeline
+
+1.  Open Airflow at `http://localhost:8080`.
+2.  Go to the **Assets** tab to see the dependency graph (as shown in the screenshots).
+3.  Go to the **DAGs** tab and unpause all 4 DAGs (`user_asset`, `user_location`, `user_login`, `user_info`).
+
+### 3\. Trigger the Event
+
+1.  Manually trigger the **`user_asset`** DAG.
+2.  **Watch the Magic:** You do *not* need to touch the other DAGs. As soon as `user_asset` finishes, the other three will automatically start running in parallel.
