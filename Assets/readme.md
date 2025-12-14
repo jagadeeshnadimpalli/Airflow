@@ -2,7 +2,7 @@
 
 This project explores the **Event-Driven** capabilities of Apache Airflow 3.0. Instead of running DAGs on a fixed time schedule (e.g., "every hour"), this project uses **Airflow Assets** to trigger workflows immediately when specific data becomes available.
 
-![Asset Dependency Graph](Multi-Asset_setup.jpg)
+![Asset Dependency Graph](Assets/Multi-Asset_setup.png)
 *(This graph visualizes how the `user_asset` triggers three downstream consumers automatically)*
 
 ## 🎯 Key Concepts Explored
@@ -34,7 +34,7 @@ These functions do *not* have a time schedule. They are scheduled on `[user_asse
     * **Action:** Extracts both **Timezone** and **Date of Birth (DOB)**.
     * **Output:** Updates two separate assets: `user_timezone` and `user_dob`.
 
-![Asset DAG List](Asset_Dags.jpg)
+![Asset DAG List](Assets/Asset_Dags.jpg)
 *(Notice how the consumers have no cron schedule, but listen for `user_asset`)*
 
 ## 💻 Code Highlight: Passing Data Between Assets
