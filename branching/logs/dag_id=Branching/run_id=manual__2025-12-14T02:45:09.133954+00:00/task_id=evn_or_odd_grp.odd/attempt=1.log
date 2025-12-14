@@ -1,4 +1,0 @@
-{"timestamp":"2025-12-14T02:45:14.124483","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2025-12-14T02:45:14.125155","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Branching.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2025-12-14T02:45:14.186974Z","level":"info","event":"Given Summation of values 33 and 42 is 75 which is also an Odd number","chan":"stdout","logger":"task"}
-{"timestamp":"2025-12-14T02:45:14.163625","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}

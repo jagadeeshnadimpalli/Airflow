@@ -1,0 +1,36 @@
+# --- OS / System Files ---
+.DS_Store
+.VSCode/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+
+# --- Environment Variables (Secrets!) ---
+# NEVER commit these. They contain passwords.
+.env
+.env.*
+.env.local
+
+# --- Docker ---
+docker-compose.override.yaml
+
+# --- Airflow ---
+# Ignore logs generated while running locally
+logs/
+airflow-webserver.pid
+standalone_admin_password.txt
+
+# --- IDE Settings ---
+.vscode/
+.idea/
+
+# --- CUSTOM IGNORES FOR THIS PROJECT ---
+Postgresql_Airflow/

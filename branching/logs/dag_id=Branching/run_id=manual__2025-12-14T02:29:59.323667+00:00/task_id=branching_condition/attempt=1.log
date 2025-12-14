@@ -1,7 +1,0 @@
-{"timestamp":"2025-12-14T02:30:01.153883","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2025-12-14T02:30:01.154629","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/Branching.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2025-12-14T02:30:01.235325","level":"info","event":"Done. Returned value was: less_or_equal_10","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
-{"timestamp":"2025-12-14T02:30:01.235639","level":"info","event":"Branch into less_or_equal_10","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
-{"timestamp":"2025-12-14T02:30:01.236123","level":"info","event":"Following branch {'less_or_equal_10'}","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
-{"timestamp":"2025-12-14T02:30:01.236400","level":"info","event":"Skipping tasks [('greater_than_10', -1)]","logger":"airflow.task.operators.airflow.providers.standard.decorators.branch_python._BranchPythonDecoratedOperator"}
-{"timestamp":"2025-12-14T02:30:01.237538","level":"info","event":"Skipping downstream tasks.","logger":"task"}
