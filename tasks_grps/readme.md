@@ -31,6 +31,7 @@ Initially, the complexity is hidden. You just see the main tasks and the parent 
 ### 2. Expanded (Nested) View
 Expanding the groups reveals the complex dependency chain inside. Notice how `nested_task_grp1` sits inside `task_grp1`.
 ![Nested View](nested_task_grps.png)
+
 ![Fully Expanded](nested_task_grp_2.png)
 
 ### 3. Data Flow Verification (XComs)
