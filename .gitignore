@@ -32,5 +32,5 @@ standalone_admin_password.txt
 .vscode/
 .idea/
 
-# --- CUSTOM IGNORES FOR THIS PROJECT ---
-Postgresql_Airflow/
+
+Postgresql_Airflow/python/
