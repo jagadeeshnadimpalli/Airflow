@@ -26,16 +26,16 @@ The DAG `task_grouping` simulates a data processing chain where each task adds `
 
 ### 1. High-Level View
 Initially, the complexity is hidden. You just see the main tasks and the parent group.
-![High Level View](task_grp1.jpg)
+![High Level View](task_grp1.png)
 
 ### 2. Expanded (Nested) View
 Expanding the groups reveals the complex dependency chain inside. Notice how `nested_task_grp1` sits inside `task_grp1`.
-![Nested View](nested_task_grps.jpg)
-![Fully Expanded](nested_task_grp_2.jpg)
+![Nested View](nested_task_grps.png)
+![Fully Expanded](nested_task_grp_2.png)
 
 ### 3. Data Flow Verification (XComs)
 To prove the logic works, I inspected the XComs. You can see the value incrementing at each step (`5` -> `10` -> `15` -> `20` -> `25`).
-![XCom Values](Xcom_values.jpg)
+![XCom Values](Xcom_values.png)
 
 ## 💻 Code Structure
 The implementation highlights the clean syntax of the TaskFlow API. Dependencies are defined by simply passing the function results.
